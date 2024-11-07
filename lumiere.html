@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumière Café</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #ff69b4;
+            padding: 15px;
+            color: white;
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            background-color: #c5ff47;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            filter: brightness(0.5);
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        .menu {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: white;
+        }
+
+        .menu h2 {
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+
+        .menu-items {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .menu-item {
+            width: 250px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .menu-item img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .menu-item h3 {
+            margin: 10px 0;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .menu-item p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .services {
+            background-color: #ffe4e1;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+
+        .service-items {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service-item {
+            width: 250px;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .service-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .service-item h3 {
+            margin: 15px 0;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .footer-container {
+            background-color: #ff69b4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Lumiére</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Principal</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Menú</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="lumiere.cafe.jpg" alt="lumiere" class="hero-image">
+        <div class="hero-text">
+            Iluminando tus sentidos con cada sorbo
+        </div>
+    </section>
+
+    <section class="menu">
+        <h2>Menú</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="desayunos.png" alt="Desayunos">
+                <h3>Desayunos</h3>
+                <p>Empieza tu día con nuestras opciones saludables y deliciosas.</p>
+            </div>
+            <div class="menu-item">
+                <img src="platos-principales.png" alt="Platos Principales">
+                <h3>Platos Principales</h3>
+                <p>Sabores tradicionales con un toque moderno.</p>
+            </div>
+            <div class="menu-item">
+                <img src="postres.png" alt="Postres">
+                <h3>Postres</h3>
+                <p>Elige entre nuestros postres caseros para un final dulce.</p>
+            </div>
+            <div class="menu-item">
+                <img src="bebidas.png" alt="Bebidas">
+                <h3>Bebidas</h3>
+                <p>Disfruta de nuestras bebidas frescas y naturales.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="service-items">
+            <div class="service-item">
+                <img src="catering.jpg" alt="Catering">
+                <h3>Caterings</h3>
+                <p>Servicio de calidad para todo tipo de eventos.</p>
+            </div>
+            <div class="service-item">
+                <img src="cumpleanos.jpg" alt="Cumpleaños">
+                <h3>Cumpleaños</h3>
+                <p>Celebra tus momentos especiales con nosotros.</p>
+            </div>
+            <div class="service-item">
+                <img src="casamientos.jpg" alt="Casamientos">
+                <h3>Casamientos</h3>
+                <p>Propuestas gastronómicas perfectas para tu gran día.</p>
+            </div>
+            <div class="service-item">
+                <img src="eventos.jpg" alt="Eventos">
+                <h3>Eventos</h3>
+                <p>Te acompañamos para que disfrutes tus momentos especiales.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Lumière Café. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

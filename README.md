@@ -1,0 +1,2 @@
+# informatica
+trabajo practico informatica
